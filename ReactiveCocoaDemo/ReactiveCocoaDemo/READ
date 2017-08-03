@@ -1,0 +1,16 @@
+Reactive Cocoa 是一个重量级框架，非常的牛，为什么说Reactive Cocoa非常的牛？
+我们所熟知的iOS 开发中的事件包括：
+
+Target
+Delegate
+KVO
+通知
+时钟
+网络异步回调
+ReactiveCocoa ，就是用信号接管了iOS 中的所有事件；也就意味着，用一种统一的方式来处理iOS中的所有事件，解决了各种分散的事件处理方式
+
+
+RAC 的特点
+通过 block 函数式 + 链式 的编程，可以让所有相关的代码继承在一起！
+函数式 && 链式
+使用时需要注意循环引用，@weakify(self) / @strongify(self) 组合解除循环引用；
